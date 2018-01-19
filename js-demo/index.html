@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <style>
+    html,body{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    span{
+        font-size: 16px;
+        color:#333;
+    }
+    img{
+        vertical-align: middle;
+    }
+    .list-item{
+        border-bottom: 1px solid #e1e1e1e1;
+        padding: 10px;
+    }
+    .modal{
+        background: rgba(0,0,0,.3);
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .modal-inner{
+        background: #fff;
+        border: 1px solid #e1e1e1e1;
+        padding: 10px;
+        position: absolute;
+        top:100px;
+        width: 100%;
+        text-align: center;
+    }
+    .sel-item{
+        background: #efaa4f;
+    }
+    </style>
+</head>
+<body>
+    <p>本打算分别使用jQuery，vuejs，reactjs实现一遍这样的例子，但是由于自身及时间原因，目前只写了原生JS的实现</p>
+    <p>如果有需要，可以提供以上第三方框架的实现例子</p>
+    <button id="loadMoreData">load more data</button>
+    <button id="add">add</button>
+    <button id="addBefore">add before</button>
+    <button id="addAfter">add after</button>
+    <button id="addChild">add child</button>
+    <button id="update">update</button>
+    <button id="delete">delete</button>
+    <button id="searchById">searchById</button>
+    <button id="searchTitle">searchTitle</button>
+    <div id="list">
+        
+    </div>
+</body>
+</html>
+<!--ajax 模块-->
+<script src="./myAjax.js"></script>
+<!--弹出框 模块-->
+<script src="./modal.js"></script>
+<!--选择 模块-->
+<script src="./singleSelect.js"></script>
+<!--更新 模块-->
+<script src="./update.js"></script>
+<!--删除 模块-->
+<script src="./delete.js"></script>
+<!--查询 模块-->
+<script src="./search.js"></script>
+<!--新增 模块-->
+<script src="./add.js"></script>
+<!--页面主逻辑 模块-->
+<script src="./index.js"></script>

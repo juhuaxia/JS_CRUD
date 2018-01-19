@@ -1,0 +1,19 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+span{
+    font-size: 16px;
+    color:#333;
+}
+img{
+    vertical-align: middle;
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}

@@ -1,0 +1,31 @@
+@import './variable.scss';
+@import './base.scss';
+@import './comm.scss';
+
+.list-item{
+    border-bottom: $border;
+}
+
+.modal{
+    background: $maskOpacityBg;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    .modal-inner{
+        background: $whiteColor;
+        border: $border;
+        padding: 10px;
+        position: absolute;
+        top:100px;
+        width: 100%;
+        text-align: center;
+    }
+}
+.sel-item{
+    background: #efaa4f;
+}
