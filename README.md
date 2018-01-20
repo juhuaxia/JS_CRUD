@@ -1,2 +1,2 @@
 # JS_CRUD
-CURD demo with react
+CURD demo with javascript react redux
